@@ -12,14 +12,14 @@ terraform {
 
 provider "aws" {
   region = "eu-central-1" # ERSETZE DIES mit deiner AWS-Region (z.B. us-east-1, eu-west-2 etc.)
-                          # Diese Region sollte mit deiner Default-Region aus aws configure
-                          # oder den Umgebungsvariablen übereinstimmen, oder sie überschreibt diese.
+  # Diese Region sollte mit deiner Default-Region aus aws configure
+  # oder den Umgebungsvariablen übereinstimmen, oder sie überschreibt diese.
 }
 
 resource "aws_s3_bucket" "my_research_bucket" {
   # WICHTIG: Bucket-Namen müssen global eindeutig sein!
   # Füge deinen Namen/Initialen und ggf. eine Zufallszahl/Datum hinzu.
-  bucket = "m.h.-tf-research-bucket-20250606" # ERSETZEN!
+  bucket = "research-bucket-mh66" # ERSETZEN!
 
   tags = {
     Name        = "My Terraform Research Bucket"

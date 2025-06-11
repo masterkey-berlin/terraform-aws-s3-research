@@ -69,3 +69,23 @@ output "bucket_arn" {
 Dieses Projekt zeigt, wie der AWS Provider in Terraform konfiguriert wird, wie eine AWS-Ressource (S3 Bucket) definiert wird und welche Informationen die Dokumentation bereitstellt. Die praktische Umsetzung erfolgt durch Terraform-Workflows zur Erstellung und Löschung des Buckets.
 
 Hinweis: Alle sensiblen Zugangsdaten sind in Umgebungsvariablen oder AWS CLI-Konfigurationsdateien gespeichert und nicht im Code sichtbar.
+
+
+## Terraform Projekt: AWS VPC mit EC2 Instanz
+
+Dieses Teilprojekt demonstriert die Erstellung einer einfachen AWS-Infrastruktur bestehend aus einem Virtual Private Cloud (VPC), einem öffentlichen Subnetz, einer Sicherheitsgruppe (Security Group) für SSH-Zugriff und einer EC2-Instanz. Alle Ressourcen werden deklarativ mit Terraform verwaltet.
+
+**Ziele:**
+*   Praktische Anwendung von Terraform zur Bereitstellung abhängiger AWS-Ressourcen.
+*   Verständnis des Terraform-Workflows (init, plan, apply, destroy) im Cloud-Kontext.
+
+## Terraform: Deployment einer AWS EC2-Umgebung
+
+Dieses Projekt nutzt Terraform, um eine minimale, lauffähige Umgebung in AWS zu provisionieren. Es werden folgende Hauptressourcen erstellt:
+*   Virtual Private Cloud (VPC)
+*   Öffentliches Subnetz
+*   Sicherheitsgruppe (erlaubt SSH)
+*   EC2 Instanz (t2.micro)
+
+Die vollständige Terraform-Konfiguration und eine detailliertere Dokumentation der Umsetzung findet sich im Verzeichnis:
+➡️ (./terraform/aws-vpc-ec2/solution_reflection.md and images)
